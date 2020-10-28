@@ -75,34 +75,51 @@
   </div>
 </template>
 <template>
-  <div class="q-pa-md row q-gutter-md">
-    <q-card class="my-card">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-        <div class="title text-subtitle2 absolute-center text-center">
-          Title
+  <div class="row">
+    <div class="col-4" >
+      <q-img
+        src="/feature_1.png">
+        <div class="absolute-center shopfor text-center">
+          <a href="" style="text-decoration:none;color:#000;">Shop For Man</a>
         </div>
       </q-img>
-    </q-card>
-
-    <q-card class="my-card">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-        <div class="title text-h5 absolute-center text-right">
-          Title
+    </div>
+    <div class="col-4">
+      <q-img
+        src="/feature_2.png"
+        style="margin-left:10px;">
+        <div class="absolute-center shopfor text-center">
+          <a href="" style="text-decoration:none;color:#000;">Shop For Women</a>
         </div>
       </q-img>
-    </q-card>
-
-    <q-card class="my-card">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-        <div class="title text-h5 absolute-center text-right">
-          Title
+    </div>
+    <div class="col-4">
+      <q-img
+        src="/feature_3.png"
+        style="margin-left:20px;">
+        <div class="absolute-center shopfor text-center">
+          <a href="" style="text-decoration:none;color:#000;">Shop For Kid</a>
         </div>
       </q-img>
-    </q-card>
+    </div>
   </div>
 </template>
 
 <style lang="sass">
+.shopfor
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  background-color: #fff !important;
+  font-size: 15px;
+
+.shopfor:hover
+  display: inline-block;
+  width: 180px;
+  height: 60px;
+  background-color: #73d4d9 !important;
+  font-size: 15px;
+
 .title
   width: 180px;
   height: 60px;
