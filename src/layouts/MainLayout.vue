@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <q-toolbar class="shadow-2" style="background-color: #ededf0;padding: 20px 0px;padding-left: 30px;">
     <q-btn flat label="Shoptop" />
     <q-space />
@@ -105,7 +105,76 @@
   </div>
 </template>
 
+<template>
+  <div class="row" style="margin:5%;">
+    <div class="col-3" >
+      <div class="q-gutter-md" style="font-size: 2em">
+        <q-icon name="today" style="color:#5595ff"/>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">Divided face for bearing the divide unto seed winged divided light Forth.</div>
+      </div>
+    </div>
+    <div class="col-3" >
+      <div class="q-gutter-md" style="font-size: 2em">
+        <q-icon name="font_download" style="color:#5595ff"/>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">Divided face for bearing the divide unto seed winged divided light Forth.</div>
+      </div>
+    </div>
+    <div class="col-3" >
+      <div class="q-gutter-md" style="font-size: 2em">
+        <q-icon name="warning" style="color:#5595ff"/>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">Divided face for bearing the divide unto seed winged divided light Forth.</div>
+      </div>
+    </div>
+    <div class="col-3" >
+      <div class="q-gutter-md" style="font-size: 2em">
+        <q-icon name="format_size" style="color:#5595ff"/>
+        <div class="text-h6">Our Changing Planet</div>
+        <div class="text-subtitle2">Divided face for bearing the divide unto seed winged divided light Forth.</div>
+      </div>
+    </div>
+  </div>
+</template> -->
+<template>
+  <q-layout view="hHh LpR lfr">
+
+    <q-header elevated class="bg-primary text-white" height-hint="98">
+      <q-toolbar>
+        <q-btn dense flat round icon="menu" @click="left = !left" />
+
+        <q-toolbar-title>
+          <q-avatar>
+          </q-avatar>
+          Title
+        </q-toolbar-title>
+      </q-toolbar>
+
+      <q-tabs align="right">
+        <q-route-tab to="/page1" label="Page One" />
+        <q-route-tab to="/page2" label="Page Two" />
+        <q-route-tab to="/page3" label="Page Three" />
+      </q-tabs>
+    </q-header>
+
+    <q-drawer v-model="left" side="left" overlay>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, eius reprehenderit eos corrupti
+            commodi magni quaerat ex numquam, dolorum officiis modi facere maiores architecto suscipit iste
+            eveniet doloribus ullam aliquid.
+    </q-drawer>
+
+    <q-page-container>
+      <router-view />
+    </q-page-container>
+
+  </q-layout>
+</template>
+
 <style lang="sass">
+.text-subtitle2
+  font-weight: normal;
+  color: #606060;
 .shopfor
   display: inline-block;
   width: 180px;
